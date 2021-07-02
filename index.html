@@ -2,163 +2,323 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css"
+      href="./assets/css/tabler-icons-1.41.1/iconfont/tabler-icons.min.css"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Admin Desk</title>
   </head>
   <body>
-    <!-- !Sidebar-->
-    <div class="sidebar shadow">
-      <!-- *WC Logo Brand-->
-      <div class="sidebar-brand">
-        <h2><span class="fas fa-box"></span><span>DASHCSS</span></h2>
-      </div>
-      <!-- *END WC Logo Brand-->
-      <!-- *Sidebar Menu -->
-      <div class="sidebar-menu">
-        <ul>
-          <!-- !NB: active = declares the page you are currently on. change it for the page you are on -->
-          <li>
-            <a href="" class="active"
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-          <li>
-            <a href=""
-              ><span class="ti ti-home"></span><span>Dashboard</span></a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- *END Sidebar Menu -->
-    </div>
-    <!-- !END Sidebar -->
-    <!-- !Navbar -->
-    <header class="shadow glass">
-      <!-- *Toggle Btn -->
-      <div class="toggle__btn">
-        <span class="ti ti-align-justified"></span>
-      </div>
-      <!-- *END Toggle Btn -->
-      <!-- *Searchbox -->
-      <div class="search-wrapper">
-        <span class="ti ti-search"></span>
-        <input type="search" placeholder="Search..." />
-      </div>
-      <!-- *END Searchbox -->
-      <!-- *Userbox-->
-      <div class="user-wrapper">
-        <span class="ti ti-user user-icon"></span>
-        <div>
-          <h4>Username</h4>
-          <small>user role</small>
+    <!-- !Header -->
+    <header class="header glass shadow">
+      <div class="header__container">
+        <a href="#" class="header__logo">Admin Desk</a>
+        <!-- *Search box -->
+        <div class="header__search">
+          <input type="search" placeholder="Search" class="header__input" />
+          <i class="ti ti-search header__icon"></i>
         </div>
-      </div>
-      <!-- *END Userbox-->
-    </header>
-    <!-- !END Navbar -->
-    <!-- !Main Wrapper Content -->
-    <div class="main-content">
-      <!--
-      <header class="shadow glass">
-        <div class="toggle__btn">
-          <span class="fas fa-bars"></span>
-        </div>
-        <div class="search-wrapper">
-          <span class="fas fa-search"></span>
-          <input type="search" placeholder="Search..." />
-        </div>
-        <div class="user-wrapper">
-          <span class="far fa-user user-icon"></span>
+        <!-- *END Search box -->
+        <!-- *User box-->
+        <div class="user__wrapper">
+          <span class="ti ti-user user-icon"></span>
           <div>
             <h4>Username</h4>
             <small>user role</small>
           </div>
         </div>
-      </header>
-    -->
-      <!-- ?Main -->
-      <main>
-        <!-- *Cards Wrapper -->
-        <div class="cards">
-          <!-- *Card Single -->
-          <div class="card-single">
-            <div>
-              <h1>54</h1>
-              <span>Customers</span>
-            </div>
-            <div>
-              <span class="ti ti-users"></span>
-            </div>
-          </div>
-          <!-- *Card Single -->
-
-          <!-- *Card Single -->
-          <div class="card-single">
-            <div>
-              <h1>54</h1>
-              <span>Customers</span>
-            </div>
-            <div>
-              <span class="ti ti-users"></span>
-            </div>
-          </div>
-          <!-- *Card Single -->
-
-          <!-- *Card Single -->
-          <div class="card-single">
-            <div>
-              <h1>54</h1>
-              <span>Customers</span>
-            </div>
-            <div>
-              <span class="ti ti-users"></span>
-            </div>
-          </div>
-          <!-- *Card Single -->
-
-          <!-- *Card Single -->
-          <div class="card-single">
-            <div>
-              <h1>54</h1>
-              <span>Customers</span>
-            </div>
-            <div>
-              <span class="ti ti-users"></span>
-            </div>
-          </div>
-          <!-- *Card Single -->
+        <!-- *END User box-->
+        <!-- *Toggle *only visible on >763px devices* -->
+        <div class="header__toggle">
+          <i class="ti ti-menu-2" id="header-toggle"></i>
         </div>
-        <!-- *END Cards -->
-      </main>
-      <!-- ?END Main -->
+        <!-- *END Toggle -->
+      </div>
+    </header>
+    <!-- !END Header-->
+    <!-- !Sidebar -->
+    <div class="nav gradient" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <!-- *Sidebar Logo -->
+          <a href="#" class="nav__link nav__logo">
+            <i class="ti ti-device-desktop-analytics nav__icon"></i>
+            <span class="nav__logo-name">Admin Desk</span>
+          </a>
+          <!-- *END Sidebar Logo -->
+          <!-- *Sidebar item list -->
+          <div class="nav__list">
+            <div class="nav__items">
+              <!-- *Section Title -->
+              <h3 class="nav__subtitle">Profile</h3>
+              <!-- *END Section Title -->
+              <!-- *Sidebar Element -->
+              <a href="#" class="nav__link active">
+                <i class="ti ti-smart-home nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+              <!-- *END Sidebar Element -->
+              <!-- *Sidebar Element -->
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="ti ti-user nav__icon"></i>
+                  <span class="nav__name">Profile</span>
+                  <i
+                    class="ti ti-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+                <!-- ?Element submenu -->
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">Passwords</a>
+                    <a href="#" class="nav__dropdown-item">Mail</a>
+                    <a href="#" class="nav__dropdown-item">Accounts</a>
+                  </div>
+                </div>
+              </div>
+              <!-- ?END Element submenu -->
+              <!-- *END Sidebar Element -->
+              <!-- *Sidebar Element -->
+              <a href="#" class="nav__link">
+                <i class="ti ti-brand-telegram nav__icon"></i>
+                <span class="nav__name">Messages</span>
+              </a>
+            </div>
+            <!-- *END Sidebar Element -->
+            <div class="nav__items">
+              <!-- *Section Title -->
+              <h3 class="nav__subtitle">Menu</h3>
+              <!-- *END Section Title -->
+              <!-- *Sidebar Element -->
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="ti ti-bell nav__icon"></i>
+                  <span class="nav__name">Notifications</span>
+                  <i
+                    class="ti ti-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+                <!-- ?Element submenu -->
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="#" class="nav__dropdown-item">Blocked</a>
+                    <a href="#" class="nav__dropdown-item">Silenced</a>
+                    <a href="#" class="nav__dropdown-item">Publish</a>
+                    <a href="#" class="nav__dropdown-item">Program</a>
+                  </div>
+                </div>
+                <!-- ?END Element submenu -->
+              </div>
+              <!-- *ENDSidebar Element -->
+              <!-- *Sidebar Element -->
+              <a href="#" class="nav__link">
+                <i class="ti ti-compass nav__icon"></i>
+                <span class="nav__name">Explore</span>
+              </a>
+              <!-- *END Sidebar Element -->
+              <!-- *Sidebar Element -->
+              <a href="#" class="nav__link">
+                <i class="ti ti-bookmarks nav__icon"></i>
+                <span class="nav__name">Saved</span>
+              </a>
+              <!-- *END Sidebar Element -->
+            </div>
+          </div>
+          <!-- *END Sidebar item list -->
+        </div>
+        <!-- *Logout box-->
+        <a href="#" class="nav__link nav__logout">
+          <i class="ti ti-logout nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+        <!-- *END Logout box -->
+      </nav>
     </div>
-    <!-- !END Main Wrapper  Content -->
+    <!-- !END Sidebar -->
+    <!-- !contents -->
+    <main class="main__content">
+      <!-- ?Cards Wrapper -->
+      <div class="cards">
+        <!-- *Card Single -->
+        <div class="card__single shadow">
+          <div>
+            <h1>54</h1>
+            <span class="card__text">Customers</span>
+          </div>
+          <div>
+            <i class="ti ti-users card__icon"></i>
+          </div>
+        </div>
+        <!-- *Card Single -->
+
+        <!-- *Card Single -->
+        <div class="card__single shadow">
+          <div>
+            <h1>54</h1>
+            <span class="card__text">Customers</span>
+          </div>
+          <div>
+            <i class="ti ti-users card__icon"></i>
+          </div>
+        </div>
+        <!-- *Card Single -->
+
+        <!-- *Card Single -->
+        <div class="card__single shadow">
+          <div>
+            <h1>54</h1>
+            <span class="card__text">Customers</span>
+          </div>
+          <div>
+            <i class="ti ti-users card__icon"></i>
+          </div>
+        </div>
+        <!-- *Card Single -->
+
+        <!-- *Card Single -->
+        <div class="card__single shadow">
+          <div>
+            <h1>54</h1>
+            <span class="card__text">Customers</span>
+          </div>
+          <div>
+            <i class="ti ti-users card__icon"></i>
+          </div>
+        </div>
+        <!-- *Card Single -->
+      </div>
+      <!-- ?END Cards Wrapper -->
+
+      <!-- ?Recent Projects -->
+      <div class="recent__grid">
+        <div class="projects">
+          <div class="table__wrapper">
+            <!-- *Project Title -->
+            <div class="tablethumb__header">
+              <h2>Recents Orders</h2>
+              <a class="show__all" href="#">
+                See All <i class="ti ti-arrow-bar-to-right"></i>
+              </a>
+            </div>
+            <!-- *END Project Title-->
+            <!-- *Project Body -->
+            <div class="tablethumb__body">
+              <table>
+                <thead>
+                  <tr>
+                    <td>ID Orders</td>
+                    <td>ID Buyers</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AN/856974</td>
+                    <td>USR/78264</td>
+                    <td><span class="status"></span></td>
+                  </tr>
+                  <tr>
+                    <td>AN/856974</td>
+                    <td>USR/78264</td>
+                    <td><span class="status"></span></td>
+                  </tr>
+                  <tr>
+                    <td>AN/856974</td>
+                    <td>USR/78264</td>
+                    <td><span class="status"></span></td>
+                  </tr>
+                  <tr>
+                    <td>AN/856974</td>
+                    <td>USR/78264</td>
+                    <td><span class="status"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- *END Project Body-->
+          </div>
+        </div>
+        <!-- ?Customers tab -->
+        <div class="customers">
+          <div class="table__wrapper">
+            <!-- *Customers header-->
+            <div class="tablethumb__header">
+              <h3>New Customers</h3>
+              <a class="show__all" href="#">
+                See All <i class="ti ti-arrow-bar-to-right"></i>
+              </a>
+            </div>
+            <!-- *END Customers header-->
+            <!-- *Customer Body -->
+            <div class="tablethumb__body">
+              <!-- *Customer -->
+              <div class="customer">
+                <div>
+                  <img src="./assets/img/" width="40px" height="40px" alt="" />
+                  <h4>John Doe</h4>
+                  <small>NYC</small>
+                </div>
+                <div>
+                  <i class="ti ti-user-check"></i>
+                  <i class="ti ti-user-exclamation"></i>
+                  <i class="ti ti-user-x"></i>
+                </div>
+              </div>
+              <!-- *END Customer -->
+              <!-- *Customer -->
+              <div class="customer">
+                <div>
+                  <img src="./assets/img/" width="40px" height="40px" alt="" />
+                  <h4>John Doe</h4>
+                  <small>NYC</small>
+                </div>
+                <div>
+                  <i class="ti ti-user-check"></i>
+                  <i class="ti ti-user-exclamation"></i>
+                  <i class="ti ti-user-x"></i>
+                </div>
+              </div>
+              <!-- *END Customer -->
+              <!-- *Customer -->
+              <div class="customer">
+                <div>
+                  <img src="./assets/img/" width="40px" height="40px" alt="" />
+                  <h4>John Doe</h4>
+                  <small>NYC</small>
+                </div>
+                <div>
+                  <i class="ti ti-user-check"></i>
+                  <i class="ti ti-user-exclamation"></i>
+                  <i class="ti ti-user-x"></i>
+                </div>
+              </div>
+              <!-- *END Customer -->
+              <!-- *Customer -->
+              <div class="customer">
+                <div>
+                  <img src="./assets/img/" width="40px" height="40px" alt="" />
+                  <h4>John Doe</h4>
+                  <small>NYC</small>
+                </div>
+                <div>
+                  <i class="ti ti-user-check"></i>
+                  <i class="ti ti-user-exclamation"></i>
+                  <i class="ti ti-user-x"></i>
+                </div>
+              </div>
+              <!-- *END Customer -->
+            </div>
+            <!-- *END Customer Body -->
+          </div>
+        </div>
+        <!-- ?END Customers tab -->
+      </div>
+      <!-- ?END Recent Projects -->
+    </main>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

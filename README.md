@@ -1,2 +1,2 @@
-# admin-dashboard
+# admin-desk
 pure css/js admin dashboard template

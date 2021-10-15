@@ -21,7 +21,7 @@ AdminDesk is a free and open-sourced Bootstrap themed Angular 12 starter project
 │   └── unit                        # Unit tests
 ├── browserlistrc
 ├── eslintignore
-├── eslintrc.json                   #Eslint file for rules
+├── eslintrc.json                   # Eslint file for rules
 ├── .gitignore
 ├── .prettierrc.json                # Prettier file to define style rules
 ├── angular.json                    # The core of angular, set here all your package and dependencies

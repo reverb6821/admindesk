@@ -6,12 +6,30 @@ AdminDesk is a free and open-sourced Bootstrap themed Angular 12 starter project
 
 ```
 .
-├── ...
-├── test                    # Test files (alternatively `spec` or `tests`)
-│   ├── benchmarks          # Load and stress tests
-│   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-│   └── unit                # Unit tests
-└── ...
+├── src                             # Main root file
+│   ├── app                         # Load and stress tests
+│   │    ├── components             # All Angular component for the template
+│   │    │    ├── partials          # All partials components 
+│   │    ├── layouts                # Where define to find all pages that renderize components
+│   │    │    ├── dashoard          # Dashboard Page
+│   │    │    ├── components        # Page where to find all components
+│   │    │    └── login             # Login Page
+│   │    ├── view                   # Where all pages was mounted
+│   │    ├── app-routing.module.ts  # Angular routes file
+│   │    └── app.module.ts          # All modules imported
+│   ├── integration                 # End-to-end, integration tests (alternatively `e2e`)
+│   └── unit                        # Unit tests
+├── browserlistrc
+├── eslintignore
+├── eslintrc.json                   #Eslint file for rules
+├── .gitignore
+├── .prettierrc.json                # Prettier file to define style rules
+├── angular.json                    # The core of angular, set here all your package and dependencies
+├── karma.conf.js
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
 ```
 
 

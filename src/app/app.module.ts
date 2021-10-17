@@ -7,20 +7,18 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { RemixIconModule } from "angular-remix-icon";
-import { RiNotificationLine, RiChat1Line, RiSearch2Line, RiAlignCenter, RiDashboard3Line, RiServerLine, RiArrowDownSLine, RiTableLine, RiBarChart2Line, RiAncientGateLine, RiUserLine, RiInformationLine, RiMailSendLine, RiContactsBook2Line, RiLoginCircleLine, RiForbidLine, RiFileLine, RiCheckboxBlankCircleLine } from 'angular-remix-icon';
+import { RiComputerLine, RiNotificationLine,RiCompassLine, RiChat1Line, RiSearch2Line, RiAlignCenter, RiDashboard3Line, RiServerLine, RiArrowDownSLine, RiTableLine, RiBarChart2Line, RiAncientGateLine, RiUserLine, RiInformationLine, RiMailSendLine, RiContactsBook2Line, RiLoginCircleLine, RiForbidLine, RiFileLine, RiCheckboxBlankCircleLine } from 'angular-remix-icon';
 
-import { HeaderComponent } from './components/partials/header/header.component';
-import { SidebarComponent } from './components/partials/sidebar/sidebar.component';
+import { NavbarComponent } from './components/partials/navbar/navbar.component';
 
 const icons = {
-  RiNotificationLine, RiChat1Line, RiSearch2Line,RiAlignCenter, RiDashboard3Line,RiServerLine,RiArrowDownSLine, RiTableLine, RiBarChart2Line, RiAncientGateLine, RiUserLine, RiInformationLine, RiMailSendLine, RiContactsBook2Line, RiLoginCircleLine, RiForbidLine, RiFileLine, RiCheckboxBlankCircleLine          
+  RiComputerLine, RiNotificationLine,RiCompassLine, RiChat1Line, RiSearch2Line,RiAlignCenter, RiDashboard3Line,RiServerLine,RiArrowDownSLine, RiTableLine, RiBarChart2Line, RiAncientGateLine, RiUserLine, RiInformationLine, RiMailSendLine, RiContactsBook2Line, RiLoginCircleLine, RiForbidLine, RiFileLine, RiCheckboxBlankCircleLine          
 };
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    SidebarComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

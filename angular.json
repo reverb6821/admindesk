@@ -32,13 +32,9 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/remixicon/fonts/remixicon.css"
+              "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

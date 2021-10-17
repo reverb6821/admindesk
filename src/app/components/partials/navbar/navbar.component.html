@@ -1,0 +1,121 @@
+<header class="header glass shadow">
+    <div class="header__container">
+      <a href="#" class="header__logo">Admin Desk</a>
+      <!-- *Search box -->
+      <div class="header__search">
+        <input type="search" placeholder="Search" class="header__input" />
+        <rmx-icon name="search-2-line" class="header__icon"></rmx-icon>
+        <i class="ti ti-search header__icon"></i>
+      </div>
+      <!-- *END Search box -->
+      <!-- *User box-->
+      <div class="user__wrapper">
+        <rmx-icon name="user-line" class="user-icon"></rmx-icon>
+        <div>
+          <h4>Username</h4>
+          <small>user role</small>
+        </div>
+      </div>
+      <!-- *END User box-->
+      <!-- *Toggle *only visible on >763px devices* -->
+      <div class="header__toggle">
+        <rmx-icon name="align-center" id="header-toggle"></rmx-icon>
+      </div>
+      <!-- *END Toggle -->
+    </div>
+  </header>
+  
+  <div class="nav gradient" id="navbar">
+    <nav class="nav__container">
+      <div>
+        <!-- *Sidebar Logo -->
+        <a href="#" class="nav__link nav__logo">
+          <rmx-icon name="computer-line" class="nav__icon"></rmx-icon>
+          <span class="nav__logo-name">Admin Desk</span>
+        </a>
+        <!-- *END Sidebar Logo -->
+        <!-- *Sidebar item list -->
+        <div class="nav__list">
+          <div class="nav__items">
+            <!-- *Section Title -->
+            <h3 class="nav__subtitle">Profile</h3>
+            <!-- *END Section Title -->
+            <!-- *Sidebar Element -->
+            <a href="#" class="nav__link active">
+              <rmx-icon name="dashboard-3-line" class="nav__icon"></rmx-icon>
+              <span class="nav__name">Home</span>
+            </a>
+            <!-- *END Sidebar Element -->
+            <!-- *Sidebar Element -->
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+              <rmx-icon name="user-line" class="nav__icon"></rmx-icon>
+                <span class="nav__name">Profile</span>
+                <rmx-icon name="arrow-down-s-line" class="nav__dropdown-icon"></rmx-icon>
+              </a>
+              <!-- ?Element submenu -->
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <a href="#" class="nav__dropdown-item">Passwords</a>
+                  <a href="#" class="nav__dropdown-item">Mail</a>
+                  <a href="#" class="nav__dropdown-item">Accounts</a>
+                </div>
+              </div>
+            </div>
+            <!-- ?END Element submenu -->
+            <!-- *END Sidebar Element -->
+            <!-- *Sidebar Element -->
+            <a href="#" class="nav__link">
+              <rmx-icon name="mail-send-line" class="nav__icon"></rmx-icon>
+              <span class="nav__name">Messages</span>
+            </a>
+          </div>
+          <!-- *END Sidebar Element -->
+          <div class="nav__items">
+            <!-- *Section Title -->
+            <h3 class="nav__subtitle">Menu</h3>
+            <!-- *END Section Title -->
+            <!-- *Sidebar Element -->
+            <div class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <rmx-icon name="notification-line" class="nav__icon"></rmx-icon>
+                <span class="nav__name">Notifications</span>
+                <rmx-icon name="arrow-down-s-line" class="bi bi-chevron-down ms-auto"></rmx-icon>
+              </a>
+              <!-- ?Element submenu -->
+              <div class="nav__dropdown-collapse">
+                <div class="nav__dropdown-content">
+                  <a href="#" class="nav__dropdown-item">Blocked</a>
+                  <a href="#" class="nav__dropdown-item">Silenced</a>
+                  <a href="#" class="nav__dropdown-item">Publish</a>
+                  <a href="#" class="nav__dropdown-item">Program</a>
+                </div>
+              </div>
+              <!-- ?END Element submenu -->
+            </div>
+            <!-- *ENDSidebar Element -->
+            <!-- *Sidebar Element -->
+            <a href="#" class="nav__link">
+              <rmx-icon name="compass-line" class="nav__icon"></rmx-icon>
+              <span class="nav__name">Explore</span>
+            </a>
+            <!-- *END Sidebar Element -->
+            <!-- *Sidebar Element -->
+            <a href="#" class="nav__link">
+              <rmx-icon name="server-line" class="nav__icon"></rmx-icon>
+              <span class="nav__name">Saved</span>
+            </a>
+            <!-- *END Sidebar Element -->
+          </div>
+        </div>
+        <!-- *END Sidebar item list -->
+      </div>
+      <!-- *Logout box-->
+      <a href="#" class="nav__link nav__logout">
+        <rmx-icon name="login-circle-line" class="nav__icon"></rmx-icon>
+        <span class="nav__name">Log Out</span>
+      </a>
+      <!-- *END Logout box -->
+    </nav>
+  </div>
+  <!-- !END Sidebar -->

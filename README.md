@@ -1,6 +1,6 @@
 # AdminDesk
 
-AdminDesk is a free and open-sourced Bootstrap themed Angular 12 starter project, focused on management for WebApp and E-Commerce.
+AdminDesk is a free and open-sourced pure css themed Angular 12 starter project, focused on management for WebApp and E-Commerce.
 
 ### Project Structure
 

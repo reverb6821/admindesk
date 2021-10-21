@@ -29,6 +29,7 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ├── angular.json                    # The core of angular, set here all your package and dependencies
 ├── karma.conf.js
 ├── package.json
+├── tailwind.js                     # Tailwind Config file
 ├── tsconfig.app.json
 ├── tsconfig.json
 └── tsconfig.spec.json

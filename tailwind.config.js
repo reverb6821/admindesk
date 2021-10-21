@@ -1,11 +1,24 @@
+const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  purge: [],
+  purge:{
+    enabled: true,
+    content: [
+      './src/**/*.{html,ts}',
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      ...colors,
+    },
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 }

@@ -3,5 +3,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+//! Fonts
+@import "./assets/scss/fonts";
+
+//! Main
+@import "./assets/scss/main";
+
 //! custom class
-@import "./assets/scss/custom"
+@import "./assets/scss/custom";

@@ -73,9 +73,9 @@ export class CardsComponent implements OnInit {
   }
   set statIconName(statIconName: string) {
     this._statIconName =
-      statIconName === undefined ? "far fa-chart-bar" : statIconName;
+      statIconName === undefined ? "ti ti-device-laptop" : statIconName;
   }
-  private _statIconName = "far fa-chart-bar";
+  private _statIconName = "ti ti-device-laptop";
 
   // can be any of the background color utilities
   // from tailwindcss

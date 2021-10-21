@@ -9,12 +9,14 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ├── src                             # Main root file
 │   ├── app                         # Load and stress tests
 │   │    ├── components             # All Angular component for the template
+|   |    |    ├── home-components   # Components for home page
 │   │    │    ├── partials          # All partials components 
+│   │    │    └── shared            # All shared components
 │   │    ├── layouts                # Where define to find all pages that renderize components
-│   │    │    ├── dashoard          # Dashboard Page
-│   │    │    ├── components        # Page where to find all components
+│   │    │    ├── main              # Dashboard Page
 │   │    │    └── login             # Login Page
-│   │    ├── view                   # Where all pages was mounted
+│   │    ├── views                  # Where all pages was mounted
+│   │    │    └── dashboard         # Dashboard home page
 │   │    ├── app-routing.module.ts  # Angular routes file
 │   │    └── app.module.ts          # All modules imported
 │   ├── integration                 # End-to-end, integration tests (alternatively `e2e`)
@@ -27,6 +29,7 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ├── angular.json                    # The core of angular, set here all your package and dependencies
 ├── karma.conf.js
 ├── package.json
+├── tailwind.js                     # Tailwind Config file
 ├── tsconfig.app.json
 ├── tsconfig.json
 └── tsconfig.spec.json

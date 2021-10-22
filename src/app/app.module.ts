@@ -14,6 +14,8 @@ import { CardsComponent } from './components/shared/cards/cards.component';
 import { MainComponent } from './layouts/main/main.component';
 //* views
 import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { LineChartCardComponent } from './components/home/line-chart-card/line-chart-card.component';
+import { BarChartCardComponent } from './components/home/bar-chart-card/bar-chart-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
     HomeStatsComponent,
     CardsComponent,
     DashboardComponent,
-    MainComponent
+    MainComponent,
+    LineChartCardComponent,
+    BarChartCardComponent
   ],
   imports: [
     BrowserModule,

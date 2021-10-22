@@ -34,7 +34,8 @@
               "src/styles.scss",
               "./node_modules/@tabler/icons/iconfont/tabler-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

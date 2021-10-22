@@ -39,7 +39,7 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ### Feature
 Using this template you will be able to leverage lots of built-in components and thus focus on building features that set you apart from competitors rather than bulding everything from scratch. 
 
-- Bootstrap
+- TailwindCSS
 - Respondive Layout
 - Tables (builded with datatables)
 - Charts (builded with Chart.js)

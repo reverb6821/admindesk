@@ -16,6 +16,7 @@ import { MainComponent } from './layouts/main/main.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { LineChartCardComponent } from './components/home/line-chart-card/line-chart-card.component';
 import { BarChartCardComponent } from './components/home/bar-chart-card/bar-chart-card.component';
+import { TodoComponent } from './components/home/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BarChartCardComponent } from './components/home/bar-chart-card/bar-char
     DashboardComponent,
     MainComponent,
     LineChartCardComponent,
-    BarChartCardComponent
+    BarChartCardComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

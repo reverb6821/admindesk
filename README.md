@@ -34,6 +34,17 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ├── tsconfig.json
 └── tsconfig.spec.json
 ```
+### Custom SCSS Class
+- Glassmorphism
+- Gradient Colors
+- Custom Shadow Box Property
+
+### Documentation/What I've used
+- [TailwindCSS](https://tailwindcss.com/docs)
+- [Tailwind Starter Kit By Creative Tim](https://github.com/creativetimofficial/tailwind-starter-kit)
+- [Tailwind UI Kit](https://app.tailwinduikit.com/)
+- [Tailwind-Kit](https://www.tailwind-kit.com/)
+- [ChartJS](https://www.chartjs.org/docs/latest/)
 
 
 ### Feature

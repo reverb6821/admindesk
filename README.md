@@ -7,20 +7,21 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ```
 .
 ├── src                             # Main root file
-│   ├── app                         # Load and stress tests
-│   │    ├── components             # All Angular component for the template
+│   ├── app                         # App core files
+│   │    ├── components             # All Angular components for the template
 |   |    |    ├── home-components   # Components for home page
-│   │    │    ├── partials          # All partials components 
-│   │    │    └── shared            # All shared components
+│   │    │    ├── partials          # Partials components 
+│   │    │    └── shared            # Shared components
 │   │    ├── layouts                # Where define to find all pages that renderize components
 │   │    │    ├── main              # Dashboard Page
 │   │    │    └── login             # Login Page
 │   │    ├── views                  # Where all pages was mounted
 │   │    │    └── dashboard         # Dashboard home page
-│   │    ├── app-routing.module.ts  # Angular routes file
-│   │    └── app.module.ts          # All modules imported
-│   ├── integration                 # End-to-end, integration tests (alternatively `e2e`)
-│   └── unit                        # Unit tests
+│   │    ├── app-routing.module.ts  # All routes
+│   │    └── app.module.ts          # Modules imported
+│   ├── assets                      # All assets file
+│   │    └── scss                   # scss custom class
+│   └── style.scss                  # core scss file (import all scss custom here)
 ├── browserlistrc
 ├── eslintignore
 ├── eslintrc.json                   # Eslint file for rules
@@ -29,11 +30,12 @@ AdminDesk is a free and open-sourced pure css themed Angular 12 starter project,
 ├── angular.json                    # The core of angular, set here all your package and dependencies
 ├── karma.conf.js
 ├── package.json
-├── tailwind.js                     # Tailwind Config file
+├── tailwind.js                     # Tailwind config file
 ├── tsconfig.app.json
-├── tsconfig.json
+├── tsconfig.json                   # TypeScript Config File
 └── tsconfig.spec.json
 ```
+
 ### Custom SCSS Class
 - Glassmorphism
 - Gradient Colors

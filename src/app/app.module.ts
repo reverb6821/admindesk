@@ -18,6 +18,8 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { LineChartCardComponent } from './components/home/line-chart-card/line-chart-card.component';
 import { BarChartCardComponent } from './components/home/bar-chart-card/bar-chart-card.component';
 import { TodoComponent } from './components/home/todo/todo.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,13 @@ import { TodoComponent } from './components/home/todo/todo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
